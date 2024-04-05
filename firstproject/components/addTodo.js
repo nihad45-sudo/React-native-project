@@ -11,21 +11,21 @@ export default function AddTodo ({submitHandler}) {
     <View>
          <TextInput
          style={styles.input}
-         placeholder='new todo...'
+         placeholder='New Todo...'
          onChangeText={changeHandler} 
          />
          <Button onPress={()=> submitHandler(text)} 
-         title='add todo' color='coral'/>
+         title='Add Todo' color={'#64113f'}/>
     </View>
    )
 }
 
 const styles = StyleSheet.create({
     input:{
-      marginBottom: 20,
-      paddingHorizontal : 8,
-      paddingVertical:6 ,
-      borderBottomWidth:1 ,
-      borderBottomColor:'#ddd',
+      marginBottom:10,
+      paddingHorizontal:8,
+      paddingVertical:6,
+      borderBottomWidth:1,
+      borderBottomColor:'#ffe5ec'
     }
 })
